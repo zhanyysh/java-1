@@ -35,7 +35,7 @@ public class Main {
     }
 
     public static boolean palindrome(String a) {
-        a = a.toLowerCase();
+        a = a.replaceAll("\\s", "").toLowerCase();
         int left = 0;
         int right = a.length() - 1;
 
